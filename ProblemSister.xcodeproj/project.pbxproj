@@ -12,6 +12,7 @@
 		4C0B24EF1DA0EADC0071722B /* XMGFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */; };
 		4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */; };
 		4C0B24F51DA0F3530071722B /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F41DA0F3530071722B /* XMGTabBar.m */; };
+		4C0B24F81DA12D2D0071722B /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */; };
 		4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4465071DA0A11C0099D366 /* XMGTabBarController.m */; };
 		4CDC62C71D9FF5A100198F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C61D9FF5A100198F3C /* main.m */; };
 		4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C91D9FF5A100198F3C /* AppDelegate.m */; };
@@ -29,6 +30,9 @@
 		4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
 		4C0B24F31DA0F3530071722B /* XMGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
 		4C0B24F41DA0F3530071722B /* XMGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
+		4C0B24F61DA12D2D0071722B /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
+		4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
+		4C0B24F91DA12D970071722B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4C4465061DA0A11C0099D366 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
 		4C4465071DA0A11C0099D366 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,9 @@
 				4C4465071DA0A11C0099D366 /* XMGTabBarController.m */,
 				4C0B24F31DA0F3530071722B /* XMGTabBar.h */,
 				4C0B24F41DA0F3530071722B /* XMGTabBar.m */,
+				4C0B24F61DA12D2D0071722B /* UIView+XMGExtension.h */,
+				4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */,
+				4C0B24F91DA12D970071722B /* PrefixHeader.pch */,
 				4CDC62C51D9FF5A100198F3C /* Supporting Files */,
 			);
 			path = ProblemSister;
@@ -176,6 +183,7 @@
 				4C0B24E91DA0EAAB0071722B /* XMGEssenceViewController.m in Sources */,
 				4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */,
 				4C0B24F51DA0F3530071722B /* XMGTabBar.m in Sources */,
+				4C0B24F81DA12D2D0071722B /* UIView+XMGExtension.m in Sources */,
 				4CDC62C71D9FF5A100198F3C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 733VCMT28P;
+				GCC_PREFIX_HEADER = ProblemSister/PrefixHeader.pch;
 				INFOPLIST_FILE = ProblemSister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.ProblemSister;
@@ -290,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 733VCMT28P;
+				GCC_PREFIX_HEADER = ProblemSister/PrefixHeader.pch;
 				INFOPLIST_FILE = ProblemSister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.ProblemSister;

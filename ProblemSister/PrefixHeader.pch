@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  ProblemSister
+//
+//  Created by michael on 2016/10/2.
+//  Copyright © 2016年 Michael. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+XMGExtension.h"
+
+#endif /* PrefixHeader_pch */
