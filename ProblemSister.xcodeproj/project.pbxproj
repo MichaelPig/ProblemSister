@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0B24E91DA0EAAB0071722B /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24E81DA0EAAB0071722B /* XMGEssenceViewController.m */; };
+		4C0B24EC1DA0EAC10071722B /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24EB1DA0EAC10071722B /* XMGNewViewController.m */; };
+		4C0B24EF1DA0EADC0071722B /* XMGFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */; };
+		4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */; };
 		4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4465071DA0A11C0099D366 /* XMGTabBarController.m */; };
 		4CDC62C71D9FF5A100198F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C61D9FF5A100198F3C /* main.m */; };
 		4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C91D9FF5A100198F3C /* AppDelegate.m */; };
@@ -14,6 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0B24E71DA0EAAA0071722B /* XMGEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
+		4C0B24E81DA0EAAB0071722B /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
+		4C0B24EA1DA0EAC10071722B /* XMGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNewViewController.h; sourceTree = "<group>"; };
+		4C0B24EB1DA0EAC10071722B /* XMGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNewViewController.m; sourceTree = "<group>"; };
+		4C0B24ED1DA0EADC0071722B /* XMGFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendsViewController.h; sourceTree = "<group>"; };
+		4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFriendTrendsViewController.m; sourceTree = "<group>"; };
+		4C0B24F01DA0EAE90071722B /* XMGMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
+		4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
 		4C4465061DA0A11C0099D366 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
 		4C4465071DA0A11C0099D366 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +70,14 @@
 				4CDC62C91D9FF5A100198F3C /* AppDelegate.m */,
 				4C4465061DA0A11C0099D366 /* XMGTabBarController.h */,
 				4C4465071DA0A11C0099D366 /* XMGTabBarController.m */,
+				4C0B24E71DA0EAAA0071722B /* XMGEssenceViewController.h */,
+				4C0B24E81DA0EAAB0071722B /* XMGEssenceViewController.m */,
+				4C0B24EA1DA0EAC10071722B /* XMGNewViewController.h */,
+				4C0B24EB1DA0EAC10071722B /* XMGNewViewController.m */,
+				4C0B24ED1DA0EADC0071722B /* XMGFriendTrendsViewController.h */,
+				4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */,
+				4C0B24F01DA0EAE90071722B /* XMGMeViewController.h */,
+				4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */,
 				4CDC62C51D9FF5A100198F3C /* Supporting Files */,
 			);
 			path = ProblemSister;
@@ -145,7 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */,
+				4C0B24EC1DA0EAC10071722B /* XMGNewViewController.m in Sources */,
 				4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */,
+				4C0B24EF1DA0EADC0071722B /* XMGFriendTrendsViewController.m in Sources */,
+				4C0B24E91DA0EAAB0071722B /* XMGEssenceViewController.m in Sources */,
+				4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */,
 				4CDC62C71D9FF5A100198F3C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
