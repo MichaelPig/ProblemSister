@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4465071DA0A11C0099D366 /* XMGTabBarController.m */; };
 		4CDC62C71D9FF5A100198F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C61D9FF5A100198F3C /* main.m */; };
 		4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C91D9FF5A100198F3C /* AppDelegate.m */; };
-		4CDC62CD1D9FF5A100198F3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62CC1D9FF5A100198F3C /* ViewController.m */; };
 		4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC62D11D9FF5A100198F3C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C4465061DA0A11C0099D366 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
+		4C4465071DA0A11C0099D366 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC62C61D9FF5A100198F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDC62C81D9FF5A100198F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CDC62C91D9FF5A100198F3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CDC62CB1D9FF5A100198F3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CDC62CC1D9FF5A100198F3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4CDC62D11D9FF5A100198F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDC62D61D9FF5A100198F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,8 +56,8 @@
 			children = (
 				4CDC62C81D9FF5A100198F3C /* AppDelegate.h */,
 				4CDC62C91D9FF5A100198F3C /* AppDelegate.m */,
-				4CDC62CB1D9FF5A100198F3C /* ViewController.h */,
-				4CDC62CC1D9FF5A100198F3C /* ViewController.m */,
+				4C4465061DA0A11C0099D366 /* XMGTabBarController.h */,
+				4C4465071DA0A11C0099D366 /* XMGTabBarController.m */,
 				4CDC62C51D9FF5A100198F3C /* Supporting Files */,
 			);
 			path = ProblemSister;
@@ -99,6 +99,7 @@
 		4CDC62BA1D9FF5A000198F3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XMG;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Michael;
 				TargetAttributes = {
@@ -143,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CDC62CD1D9FF5A100198F3C /* ViewController.m in Sources */,
+				4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */,
 				4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */,
 				4CDC62C71D9FF5A100198F3C /* main.m in Sources */,
 			);
