@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C0B24E91DA0EAAB0071722B /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24E81DA0EAAB0071722B /* XMGEssenceViewController.m */; };
-		4C0B24EC1DA0EAC10071722B /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24EB1DA0EAC10071722B /* XMGNewViewController.m */; };
-		4C0B24EF1DA0EADC0071722B /* XMGFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */; };
-		4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */; };
-		4C0B24F51DA0F3530071722B /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F41DA0F3530071722B /* XMGTabBar.m */; };
-		4C0B24F81DA12D2D0071722B /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */; };
-		4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4465071DA0A11C0099D366 /* XMGTabBarController.m */; };
-		4C4FA6DA1DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6D91DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m */; };
-		4CDC62C71D9FF5A100198F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C61D9FF5A100198F3C /* main.m */; };
-		4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C91D9FF5A100198F3C /* AppDelegate.m */; };
+		4C4FA7041DA28B3900ED0F85 /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */; };
+		4C4FA7051DA28B3900ED0F85 /* XMGFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6E51DA28B3900ED0F85 /* XMGFriendTrendsViewController.m */; };
+		4C4FA7071DA28B3900ED0F85 /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6EC1DA28B3900ED0F85 /* XMGMeViewController.m */; };
+		4C4FA7081DA28B3900ED0F85 /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6F21DA28B3900ED0F85 /* XMGNewViewController.m */; };
+		4C4FA7091DA28B3900ED0F85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6F71DA28B3900ED0F85 /* AppDelegate.m */; };
+		4C4FA70A1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6FA1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m */; };
+		4C4FA70B1DA28B3900ED0F85 /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6FC1DA28B3900ED0F85 /* UIView+XMGExtension.m */; };
+		4C4FA70C1DA28B3900ED0F85 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6FF1DA28B3900ED0F85 /* XMGTabBarController.m */; };
+		4C4FA70D1DA28B3900ED0F85 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA7031DA28B3900ED0F85 /* XMGTabBar.m */; };
+		4C4FA70F1DA28B7800ED0F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA70E1DA28B7800ED0F85 /* main.m */; };
 		4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC62D11D9FF5A100198F3C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C0B24E71DA0EAAA0071722B /* XMGEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
-		4C0B24E81DA0EAAB0071722B /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
-		4C0B24EA1DA0EAC10071722B /* XMGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNewViewController.h; sourceTree = "<group>"; };
-		4C0B24EB1DA0EAC10071722B /* XMGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNewViewController.m; sourceTree = "<group>"; };
-		4C0B24ED1DA0EADC0071722B /* XMGFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendsViewController.h; sourceTree = "<group>"; };
-		4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFriendTrendsViewController.m; sourceTree = "<group>"; };
-		4C0B24F01DA0EAE90071722B /* XMGMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
-		4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
-		4C0B24F31DA0F3530071722B /* XMGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
-		4C0B24F41DA0F3530071722B /* XMGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
-		4C0B24F61DA12D2D0071722B /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
-		4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
-		4C0B24F91DA12D970071722B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		4C4465061DA0A11C0099D366 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
-		4C4465071DA0A11C0099D366 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
-		4C4FA6D81DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
-		4C4FA6D91DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
+		4C4FA6DE1DA28B3900ED0F85 /* XMGEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
+		4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
+		4C4FA6E41DA28B3900ED0F85 /* XMGFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendsViewController.h; sourceTree = "<group>"; };
+		4C4FA6E51DA28B3900ED0F85 /* XMGFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFriendTrendsViewController.m; sourceTree = "<group>"; };
+		4C4FA6EB1DA28B3900ED0F85 /* XMGMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
+		4C4FA6EC1DA28B3900ED0F85 /* XMGMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
+		4C4FA6F11DA28B3900ED0F85 /* XMGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNewViewController.h; sourceTree = "<group>"; };
+		4C4FA6F21DA28B3900ED0F85 /* XMGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNewViewController.m; sourceTree = "<group>"; };
+		4C4FA6F61DA28B3900ED0F85 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C4FA6F71DA28B3900ED0F85 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C4FA6F91DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
+		4C4FA6FA1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
+		4C4FA6FB1DA28B3900ED0F85 /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
+		4C4FA6FC1DA28B3900ED0F85 /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
+		4C4FA6FE1DA28B3900ED0F85 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
+		4C4FA6FF1DA28B3900ED0F85 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
+		4C4FA7001DA28B3900ED0F85 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4C4FA7021DA28B3900ED0F85 /* XMGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
+		4C4FA7031DA28B3900ED0F85 /* XMGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
+		4C4FA70E1DA28B7800ED0F85 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CDC62C61D9FF5A100198F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CDC62C81D9FF5A100198F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4CDC62C91D9FF5A100198F3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CDC62D11D9FF5A100198F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDC62D61D9FF5A100198F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +57,193 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C4FA6DB1DA28B3900ED0F85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6DC1DA28B3900ED0F85 /* Essence-精华 */,
+				4C4FA6EF1DA28B3900ED0F85 /* New-新帖 */,
+				4C4FA6E21DA28B3900ED0F85 /* FriendTrends-关注 */,
+				4C4FA6E91DA28B3900ED0F85 /* Me-我 */,
+				4C4FA6F51DA28B3900ED0F85 /* Other-其他 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C4FA6DC1DA28B3900ED0F85 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6DD1DA28B3900ED0F85 /* Controller */,
+				4C4FA6E01DA28B3900ED0F85 /* Model */,
+				4C4FA6E11DA28B3900ED0F85 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		4C4FA6DD1DA28B3900ED0F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6DE1DA28B3900ED0F85 /* XMGEssenceViewController.h */,
+				4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C4FA6E01DA28B3900ED0F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C4FA6E11DA28B3900ED0F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C4FA6E21DA28B3900ED0F85 /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6E31DA28B3900ED0F85 /* Controller */,
+				4C4FA6E61DA28B3900ED0F85 /* Model */,
+				4C4FA6E71DA28B3900ED0F85 /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		4C4FA6E31DA28B3900ED0F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6E41DA28B3900ED0F85 /* XMGFriendTrendsViewController.h */,
+				4C4FA6E51DA28B3900ED0F85 /* XMGFriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C4FA6E61DA28B3900ED0F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C4FA6E71DA28B3900ED0F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C4FA6E91DA28B3900ED0F85 /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6EA1DA28B3900ED0F85 /* Controller */,
+				4C4FA6ED1DA28B3900ED0F85 /* Model */,
+				4C4FA6EE1DA28B3900ED0F85 /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		4C4FA6EA1DA28B3900ED0F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6EB1DA28B3900ED0F85 /* XMGMeViewController.h */,
+				4C4FA6EC1DA28B3900ED0F85 /* XMGMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C4FA6ED1DA28B3900ED0F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C4FA6EE1DA28B3900ED0F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C4FA6EF1DA28B3900ED0F85 /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6F01DA28B3900ED0F85 /* Controller */,
+				4C4FA6F31DA28B3900ED0F85 /* Model */,
+				4C4FA6F41DA28B3900ED0F85 /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		4C4FA6F01DA28B3900ED0F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6F11DA28B3900ED0F85 /* XMGNewViewController.h */,
+				4C4FA6F21DA28B3900ED0F85 /* XMGNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C4FA6F31DA28B3900ED0F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C4FA6F41DA28B3900ED0F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C4FA6F51DA28B3900ED0F85 /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6FD1DA28B3900ED0F85 /* Controller */,
+				4C4FA7011DA28B3900ED0F85 /* View */,
+				4C4FA6F81DA28B3900ED0F85 /* Category */,
+				4C4FA6F61DA28B3900ED0F85 /* AppDelegate.h */,
+				4C4FA6F71DA28B3900ED0F85 /* AppDelegate.m */,
+				4C4FA70E1DA28B7800ED0F85 /* main.m */,
+				4C4FA7001DA28B3900ED0F85 /* PrefixHeader.pch */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		4C4FA6F81DA28B3900ED0F85 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6F91DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.h */,
+				4C4FA6FA1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m */,
+				4C4FA6FB1DA28B3900ED0F85 /* UIView+XMGExtension.h */,
+				4C4FA6FC1DA28B3900ED0F85 /* UIView+XMGExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4C4FA6FD1DA28B3900ED0F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA6FE1DA28B3900ED0F85 /* XMGTabBarController.h */,
+				4C4FA6FF1DA28B3900ED0F85 /* XMGTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C4FA7011DA28B3900ED0F85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C4FA7021DA28B3900ED0F85 /* XMGTabBar.h */,
+				4C4FA7031DA28B3900ED0F85 /* XMGTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4CDC62B91D9FF5A000198F3C = {
 			isa = PBXGroup;
 			children = (
@@ -76,25 +263,7 @@
 		4CDC62C41D9FF5A100198F3C /* ProblemSister */ = {
 			isa = PBXGroup;
 			children = (
-				4CDC62C81D9FF5A100198F3C /* AppDelegate.h */,
-				4CDC62C91D9FF5A100198F3C /* AppDelegate.m */,
-				4C0B24E71DA0EAAA0071722B /* XMGEssenceViewController.h */,
-				4C0B24E81DA0EAAB0071722B /* XMGEssenceViewController.m */,
-				4C0B24EA1DA0EAC10071722B /* XMGNewViewController.h */,
-				4C0B24EB1DA0EAC10071722B /* XMGNewViewController.m */,
-				4C0B24ED1DA0EADC0071722B /* XMGFriendTrendsViewController.h */,
-				4C0B24EE1DA0EADC0071722B /* XMGFriendTrendsViewController.m */,
-				4C0B24F01DA0EAE90071722B /* XMGMeViewController.h */,
-				4C0B24F11DA0EAE90071722B /* XMGMeViewController.m */,
-				4C4465061DA0A11C0099D366 /* XMGTabBarController.h */,
-				4C4465071DA0A11C0099D366 /* XMGTabBarController.m */,
-				4C0B24F31DA0F3530071722B /* XMGTabBar.h */,
-				4C0B24F41DA0F3530071722B /* XMGTabBar.m */,
-				4C0B24F61DA12D2D0071722B /* UIView+XMGExtension.h */,
-				4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */,
-				4C0B24F91DA12D970071722B /* PrefixHeader.pch */,
-				4C4FA6D81DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.h */,
-				4C4FA6D91DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m */,
+				4C4FA6DB1DA28B3900ED0F85 /* Classes */,
 				4CDC62C51D9FF5A100198F3C /* Supporting Files */,
 			);
 			path = ProblemSister;
@@ -105,7 +274,6 @@
 			children = (
 				4CDC62D11D9FF5A100198F3C /* Assets.xcassets */,
 				4CDC62D61D9FF5A100198F3C /* Info.plist */,
-				4CDC62C61D9FF5A100198F3C /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,16 +349,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */,
-				4C0B24EC1DA0EAC10071722B /* XMGNewViewController.m in Sources */,
-				4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */,
-				4C0B24EF1DA0EADC0071722B /* XMGFriendTrendsViewController.m in Sources */,
-				4C0B24E91DA0EAAB0071722B /* XMGEssenceViewController.m in Sources */,
-				4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */,
-				4C0B24F51DA0F3530071722B /* XMGTabBar.m in Sources */,
-				4C4FA6DA1DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */,
-				4C0B24F81DA12D2D0071722B /* UIView+XMGExtension.m in Sources */,
-				4CDC62C71D9FF5A100198F3C /* main.m in Sources */,
+				4C4FA70F1DA28B7800ED0F85 /* main.m in Sources */,
+				4C4FA70D1DA28B3900ED0F85 /* XMGTabBar.m in Sources */,
+				4C4FA70C1DA28B3900ED0F85 /* XMGTabBarController.m in Sources */,
+				4C4FA7041DA28B3900ED0F85 /* XMGEssenceViewController.m in Sources */,
+				4C4FA7081DA28B3900ED0F85 /* XMGNewViewController.m in Sources */,
+				4C4FA7091DA28B3900ED0F85 /* AppDelegate.m in Sources */,
+				4C4FA70A1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */,
+				4C4FA7071DA28B3900ED0F85 /* XMGMeViewController.m in Sources */,
+				4C4FA70B1DA28B3900ED0F85 /* UIView+XMGExtension.m in Sources */,
+				4C4FA7051DA28B3900ED0F85 /* XMGFriendTrendsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 733VCMT28P;
-				GCC_PREFIX_HEADER = ProblemSister/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "ProblemSister/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = ProblemSister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.ProblemSister;
@@ -305,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 733VCMT28P;
-				GCC_PREFIX_HEADER = ProblemSister/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "ProblemSister/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = ProblemSister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.ProblemSister;
