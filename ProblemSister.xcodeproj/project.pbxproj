@@ -14,6 +14,7 @@
 		4C0B24F51DA0F3530071722B /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F41DA0F3530071722B /* XMGTabBar.m */; };
 		4C0B24F81DA12D2D0071722B /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */; };
 		4C4465081DA0A11C0099D366 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4465071DA0A11C0099D366 /* XMGTabBarController.m */; };
+		4C4FA6DA1DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6D91DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m */; };
 		4CDC62C71D9FF5A100198F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C61D9FF5A100198F3C /* main.m */; };
 		4CDC62CA1D9FF5A100198F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC62C91D9FF5A100198F3C /* AppDelegate.m */; };
 		4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC62D11D9FF5A100198F3C /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 		4C0B24F91DA12D970071722B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4C4465061DA0A11C0099D366 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
 		4C4465071DA0A11C0099D366 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
+		4C4FA6D81DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
+		4C4FA6D91DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC62C61D9FF5A100198F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CDC62C81D9FF5A100198F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				4C0B24F61DA12D2D0071722B /* UIView+XMGExtension.h */,
 				4C0B24F71DA12D2D0071722B /* UIView+XMGExtension.m */,
 				4C0B24F91DA12D970071722B /* PrefixHeader.pch */,
+				4C4FA6D81DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.h */,
+				4C4FA6D91DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m */,
 				4CDC62C51D9FF5A100198F3C /* Supporting Files */,
 			);
 			path = ProblemSister;
@@ -183,6 +188,7 @@
 				4C0B24E91DA0EAAB0071722B /* XMGEssenceViewController.m in Sources */,
 				4C0B24F21DA0EAE90071722B /* XMGMeViewController.m in Sources */,
 				4C0B24F51DA0F3530071722B /* XMGTabBar.m in Sources */,
+				4C4FA6DA1DA25B7700ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				4C0B24F81DA12D2D0071722B /* UIView+XMGExtension.m in Sources */,
 				4CDC62C71D9FF5A100198F3C /* main.m in Sources */,
 			);
