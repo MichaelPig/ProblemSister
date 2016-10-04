@@ -19,10 +19,15 @@
 		4C4FA70F1DA28B7800ED0F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA70E1DA28B7800ED0F85 /* main.m */; };
 		4C6D99901DA38A47007D6F71 /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D998F1DA38A47007D6F71 /* XMGNavigationController.m */; };
 		4C6D99921DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D99911DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib */; };
+		4C6D99961DA3F37F007D6F71 /* XMGRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D99941DA3F37F007D6F71 /* XMGRecommendViewController.m */; };
+		4C6D99971DA3F37F007D6F71 /* XMGRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D99951DA3F37F007D6F71 /* XMGRecommendViewController.xib */; };
+		4C6D99991DA3F882007D6F71 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D99981DA3F882007D6F71 /* Foundation+Log.m */; };
 		4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC62D11D9FF5A100198F3C /* Assets.xcassets */; };
+		963373585EF58DD9ADB7DFB6 /* libPods-ProblemSister.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B1E9F715E6D1F3E4D4A38A /* libPods-ProblemSister.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A930E0CB91491A5CFBD719A /* Pods-ProblemSister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProblemSister.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProblemSister/Pods-ProblemSister.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4FA6DE1DA28B3900ED0F85 /* XMGEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
 		4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
 		4C4FA6E41DA28B3900ED0F85 /* XMGFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -46,9 +51,15 @@
 		4C6D998E1DA38A47007D6F71 /* XMGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNavigationController.h; sourceTree = "<group>"; };
 		4C6D998F1DA38A47007D6F71 /* XMGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationController.m; sourceTree = "<group>"; };
 		4C6D99911DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		4C6D99931DA3F37F007D6F71 /* XMGRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendViewController.h; sourceTree = "<group>"; };
+		4C6D99941DA3F37F007D6F71 /* XMGRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendViewController.m; sourceTree = "<group>"; };
+		4C6D99951DA3F37F007D6F71 /* XMGRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGRecommendViewController.xib; sourceTree = "<group>"; };
+		4C6D99981DA3F882007D6F71 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC62D11D9FF5A100198F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDC62D61D9FF5A100198F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC44D4436B15C2AD4FC462E8 /* Pods-ProblemSister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProblemSister.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProblemSister/Pods-ProblemSister.release.xcconfig"; sourceTree = "<group>"; };
+		F1B1E9F715E6D1F3E4D4A38A /* libPods-ProblemSister.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProblemSister.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +67,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963373585EF58DD9ADB7DFB6 /* libPods-ProblemSister.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41300ABC556CDDA7EE38EE4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A930E0CB91491A5CFBD719A /* Pods-ProblemSister.debug.xcconfig */,
+				CC44D4436B15C2AD4FC462E8 /* Pods-ProblemSister.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4C4FA6DB1DA28B3900ED0F85 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +144,9 @@
 				4C4FA6E41DA28B3900ED0F85 /* XMGFriendTrendsViewController.h */,
 				4C4FA6E51DA28B3900ED0F85 /* XMGFriendTrendsViewController.m */,
 				4C6D99911DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib */,
+				4C6D99931DA3F37F007D6F71 /* XMGRecommendViewController.h */,
+				4C6D99941DA3F37F007D6F71 /* XMGRecommendViewController.m */,
+				4C6D99951DA3F37F007D6F71 /* XMGRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +240,7 @@
 				4C4FA6F61DA28B3900ED0F85 /* AppDelegate.h */,
 				4C4FA6F71DA28B3900ED0F85 /* AppDelegate.m */,
 				4C4FA70E1DA28B7800ED0F85 /* main.m */,
+				4C6D99981DA3F882007D6F71 /* Foundation+Log.m */,
 				4C4FA7001DA28B3900ED0F85 /* PrefixHeader.pch */,
 			);
 			path = "Other-其他";
@@ -257,6 +282,8 @@
 			children = (
 				4CDC62C41D9FF5A100198F3C /* ProblemSister */,
 				4CDC62C31D9FF5A100198F3C /* Products */,
+				41300ABC556CDDA7EE38EE4C /* Pods */,
+				A379BE1AB33F70B123CF0DD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,6 +313,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A379BE1AB33F70B123CF0DD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B1E9F715E6D1F3E4D4A38A /* libPods-ProblemSister.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,9 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDC62D91D9FF5A100198F3C /* Build configuration list for PBXNativeTarget "ProblemSister" */;
 			buildPhases = (
+				C3B1B4E70C46A57D37CC6A72 /* [CP] Check Pods Manifest.lock */,
 				4CDC62BE1D9FF5A100198F3C /* Sources */,
 				4CDC62BF1D9FF5A100198F3C /* Frameworks */,
 				4CDC62C01D9FF5A100198F3C /* Resources */,
+				EC60B928ADA5F8C07575876F /* [CP] Embed Pods Frameworks */,
+				DA3903DE087229F14009691F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,11 +385,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */,
+				4C6D99971DA3F37F007D6F71 /* XMGRecommendViewController.xib in Resources */,
 				4C6D99921DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3B1B4E70C46A57D37CC6A72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA3903DE087229F14009691F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProblemSister/Pods-ProblemSister-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC60B928ADA5F8C07575876F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProblemSister/Pods-ProblemSister-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CDC62BE1D9FF5A100198F3C /* Sources */ = {
@@ -362,11 +449,13 @@
 				4C6D99901DA38A47007D6F71 /* XMGNavigationController.m in Sources */,
 				4C4FA70D1DA28B3900ED0F85 /* XMGTabBar.m in Sources */,
 				4C4FA70C1DA28B3900ED0F85 /* XMGTabBarController.m in Sources */,
+				4C6D99961DA3F37F007D6F71 /* XMGRecommendViewController.m in Sources */,
 				4C4FA7041DA28B3900ED0F85 /* XMGEssenceViewController.m in Sources */,
 				4C4FA7081DA28B3900ED0F85 /* XMGNewViewController.m in Sources */,
 				4C4FA7091DA28B3900ED0F85 /* AppDelegate.m in Sources */,
 				4C4FA70A1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				4C4FA7071DA28B3900ED0F85 /* XMGMeViewController.m in Sources */,
+				4C6D99991DA3F882007D6F71 /* Foundation+Log.m in Sources */,
 				4C4FA70B1DA28B3900ED0F85 /* UIView+XMGExtension.m in Sources */,
 				4C4FA7051DA28B3900ED0F85 /* XMGFriendTrendsViewController.m in Sources */,
 			);
@@ -465,6 +554,7 @@
 		};
 		4CDC62DA1D9FF5A100198F3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A930E0CB91491A5CFBD719A /* Pods-ProblemSister.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -479,6 +569,7 @@
 		};
 		4CDC62DB1D9FF5A100198F3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC44D4436B15C2AD4FC462E8 /* Pods-ProblemSister.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
