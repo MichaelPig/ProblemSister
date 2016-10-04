@@ -12,6 +12,7 @@
 #import "XMGFriendTrendsViewController.h"
 #import "XMGMeViewController.h"
 #import "XMGTabBar.h"
+#import "XMGNavigationController.h"
 
 @interface XMGTabBarController ()
 
@@ -58,7 +59,7 @@
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     //包装一个导航控制器，添加导航控制器为tabBarController为子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    XMGNavigationController *nav = [[XMGNavigationController alloc] initWithRootViewController:vc];
     [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
     
