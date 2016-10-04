@@ -20,9 +20,7 @@
 
 @implementation XMGTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
++ (void)initialize{
     //通过appearance统一设置所有UITabBarItem的文字属性
     //方法后面带有UI_APPEARANCE_SELECTOR的方法都可以通过appearance对象来统一设置
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -36,6 +34,10 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     //添加子控制器
     [self setupChild:[[XMGEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -60,7 +62,6 @@
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     //包装一个导航控制器，添加导航控制器为tabBarController为子控制器
     XMGNavigationController *nav = [[XMGNavigationController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
     
 }

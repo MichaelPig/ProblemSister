@@ -14,11 +14,21 @@
 
 @implementation XMGNavigationController
 
+/**
+ *当第一次使用这个类的时候会调用一次
+ */
+
++ (void)initialize{
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.navigationBar.tintColor = [UIColor blackColor];
+//    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 /**
