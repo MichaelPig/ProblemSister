@@ -47,7 +47,7 @@
     
     //更换tabBar
     [self setValue:[[XMGTabBar alloc] init] forKeyPath:@"tabBar"];
-    
+
 }
 
 //初始化子控制器
@@ -57,9 +57,9 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100) / 100.0 green:arc4random_uniform(100) / 100.0 blue:arc4random_uniform(100) / 100.0 alpha:1.0];
     //包装一个导航控制器，添加导航控制器为tabBarController为子控制器
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
     
 }

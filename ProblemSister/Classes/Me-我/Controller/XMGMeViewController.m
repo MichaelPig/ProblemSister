@@ -26,6 +26,9 @@
     UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
 
     self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
+    
+    //设置背景色
+    self.view.backgroundColor = XMGGlobalBg;
 }
 
 - (void)setttingClick {
