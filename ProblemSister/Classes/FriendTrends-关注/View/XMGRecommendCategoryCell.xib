@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="category" id="KGk-i7-Jjw" customClass="XMGRecommendCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-Wc-OYp" userLabel="底部的分割线">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Xfm-tf-AsZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRF-FL-C1R" userLabel="选中时显示的控件">
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="pUK-V0-sQm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vJZ-Wc-OYp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HFh-ic-0uO"/>
+                    <constraint firstAttribute="bottom" secondItem="vJZ-Wc-OYp" secondAttribute="bottom" id="Hmf-cv-pFB"/>
+                    <constraint firstItem="XRF-FL-C1R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="I88-GZ-svY"/>
+                    <constraint firstItem="XRF-FL-C1R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hiR-1N-EBK"/>
+                    <constraint firstAttribute="bottom" secondItem="XRF-FL-C1R" secondAttribute="bottom" id="tCc-TA-SVn"/>
+                    <constraint firstAttribute="trailing" secondItem="vJZ-Wc-OYp" secondAttribute="trailing" id="zUC-oM-P42"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selecetedIndicator" destination="XRF-FL-C1R" id="OGF-OB-Yuy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -10,5 +10,6 @@ target 'ProblemSister' do
 pod “AFNetworking”
 pod “SDWebImage”
 pod “SVProgressHUD”
+pod “MJExtension”
 
 end
