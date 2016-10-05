@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGRecommendViewController">
             <connections>
                 <outlet property="categoryTableView" destination="XGK-h9-kg6" id="fJK-4j-ciF"/>
+                <outlet property="userTableView" destination="Cnq-XB-Q1s" id="ddS-cV-xFB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,12 +28,22 @@
                         <outlet property="delegate" destination="-1" id="sM0-6T-Jbh"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cnq-XB-Q1s" userLabel="右侧">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cu3-A3-EeA"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Cnq-XB-Q1s" firstAttribute="leading" secondItem="XGK-h9-kg6" secondAttribute="trailing" id="4ff-Hu-jIk"/>
+                <constraint firstItem="Cnq-XB-Q1s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9fd-rW-g4S"/>
                 <constraint firstItem="XGK-h9-kg6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HV1-xQ-iJ8"/>
                 <constraint firstAttribute="bottom" secondItem="XGK-h9-kg6" secondAttribute="bottom" id="NhA-KS-CkP"/>
+                <constraint firstAttribute="trailing" secondItem="Cnq-XB-Q1s" secondAttribute="trailing" id="Ttm-7b-Z0Q"/>
                 <constraint firstItem="XGK-h9-kg6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="moH-Dz-UTh"/>
+                <constraint firstAttribute="bottom" secondItem="Cnq-XB-Q1s" secondAttribute="bottom" id="yBy-wg-mZg"/>
             </constraints>
         </view>
     </objects>
