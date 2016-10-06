@@ -17,5 +17,7 @@
 /** 名字 */
 @property (nonatomic, copy) NSString *name;
 
+/** 这个类别对应的用户数据 */
+@property (nonatomic, strong) NSMutableArray *users;
 
 @end

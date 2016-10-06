@@ -19,8 +19,6 @@
 
 /** 左边的类型数据 */
 @property (nonatomic, strong) NSArray *categories;
-/** 右边的类型数据 */
-@property (nonatomic, strong) NSArray *users;
 /** 左边的类型表格 */
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 /** 右边的用户表格 */
@@ -90,7 +88,8 @@ static NSString * const XMGUserId = @"user";
     if(tableView == self.categoryTableView) { //左边的类别表格
         return self.categories.count;
     } else { //右边的用户表格
-        return self.users.count;
+        XMGRecommendCategory *c = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
+        return c.users.count;
     }
     
 }
@@ -105,7 +104,8 @@ static NSString * const XMGUserId = @"user";
         return cell;
     } else { //右边的用户表格
         XMGRecommendUserCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGUserId];
-        cell.users = self.users[indexPath.row];
+        XMGRecommendCategory *c = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
+        cell.users = c.users[indexPath.row];
         return cell;
     }
     
@@ -116,21 +116,32 @@ static NSString * const XMGUserId = @"user";
     
     XMGRecommendCategory *c = self.categories[indexPath.row];
     
-    //发送请求给服务器，加载右侧的数据
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
-    params[@"c"] = @"subscribe";
-    params[@"category_id"] = @(c.id);
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        self.users = [XMGRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        //刷新右边的表格
+    if (c.users.count) {
+        //显示曾今的数据
         [self.userTableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    } else {
+        //发送请求给服务器，加载右侧的数据
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        params[@"a"] = @"list";
+        params[@"c"] = @"subscribe";
+        params[@"category_id"] = @(c.id);
+        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            //字典数组 -> 模型数组
+            NSArray *users = [XMGRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+            
+            //添加到当前类别对应的用户数组中
+            [c.users addObjectsFromArray:users];
+            
+            //刷新右边的表格
+            [self.userTableView reloadData];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+    }
+    
+
 }
 
 
