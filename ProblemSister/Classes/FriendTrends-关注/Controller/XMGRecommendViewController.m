@@ -14,6 +14,9 @@
 #import "XMGRecommendCategory.h"
 #import "XMGRecommendUserCell.h"
 #import "XMGRecommendUser.h"
+#import <MJRefresh.h>
+
+#define XMGSelectedCategory self.categories[self.categoryTableView.indexPathForSelectedRow.row]
 
 @interface XMGRecommendViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -34,8 +37,11 @@ static NSString * const XMGUserId = @"user";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //初始化
+    //控件的初始化
     [self setupTableView];
+    
+    //添加刷新控件
+    [self setupRefresh];
     
     //显示指示器
     [SVProgressHUD show];
@@ -62,6 +68,9 @@ static NSString * const XMGUserId = @"user";
     }];
 }
 
+/**
+ *控件的初始化
+ */
 - (void)setupTableView {
     //注册
     [self.categoryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([XMGRecommendCategoryCell class]) bundle:nil] forCellReuseIdentifier:XMGCategoryId];
@@ -81,6 +90,43 @@ static NSString * const XMGUserId = @"user";
     self.view.backgroundColor = XMGGlobalBg;
 }
 
+/**
+ *添加刷新控件
+ */
+- (void)setupRefresh {
+    self.userTableView.mj_footer = [MJRefreshAutoNormalFooter  footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
+}
+
+#pragma mark - 加载用户数据
+- (void)loadMoreUsers {
+    
+    XMGRecommendCategory *category = XMGSelectedCategory;
+    
+    //发送请求给服务器，加载右侧的数据
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"subscribe";
+    params[@"category_id"] = @(category.id);
+    params[@"page"] = @"2";
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //字典数组 -> 模型数组
+        NSArray *users = [XMGRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        //添加到当前类别对应的用户数组中
+        [category.users addObjectsFromArray:users];
+        
+        //刷新右边的表格
+        [self.userTableView reloadData];
+        
+        //让底部控件结束刷新
+        [self.userTableView.mj_footer endRefreshing];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
 #pragma mark - <UITableViewDataSource>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -88,8 +134,13 @@ static NSString * const XMGUserId = @"user";
     if(tableView == self.categoryTableView) { //左边的类别表格
         return self.categories.count;
     } else { //右边的用户表格
-        XMGRecommendCategory *c = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
-        return c.users.count;
+        
+        NSInteger count = [XMGSelectedCategory users].count;
+        
+        //每次刷新右边数据时，都控制footer显示或隐藏
+        self.userTableView.mj_footer.hidden = (count == 0);
+        
+        return count;
     }
     
 }
@@ -104,12 +155,12 @@ static NSString * const XMGUserId = @"user";
         return cell;
     } else { //右边的用户表格
         XMGRecommendUserCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGUserId];
-        XMGRecommendCategory *c = self.categories[self.categoryTableView.indexPathForSelectedRow.row];
-        cell.users = c.users[indexPath.row];
+        cell.users = [XMGSelectedCategory users][indexPath.row];
         return cell;
     }
     
 }
+
 
 #pragma mark - <UITableViewDelegate>
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -120,6 +171,10 @@ static NSString * const XMGUserId = @"user";
         //显示曾今的数据
         [self.userTableView reloadData];
     } else {
+        
+        //赶紧刷新表格，目的是：马上显示当前category的用户数据，不让用户看见上一个category的残留数据
+        [self.userTableView reloadData];
+        
         //发送请求给服务器，加载右侧的数据
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"list";
