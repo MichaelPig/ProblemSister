@@ -107,7 +107,8 @@ static NSString * const XMGUserId = @"user";
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @(category.id);
-    params[@"page"] = @"2";
+    params[@"page"] = @(++category.currentPage);
+    
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //字典数组 -> 模型数组
@@ -120,7 +121,11 @@ static NSString * const XMGUserId = @"user";
         [self.userTableView reloadData];
         
         //让底部控件结束刷新
-        [self.userTableView.mj_footer endRefreshing];
+        if (category.users.count == category.total) { //全部加载完毕
+            [self.userTableView.mj_footer endRefreshingWithNoMoreData];
+        } else {
+            [self.userTableView.mj_footer endRefreshing];
+        }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -175,11 +180,15 @@ static NSString * const XMGUserId = @"user";
         //赶紧刷新表格，目的是：马上显示当前category的用户数据，不让用户看见上一个category的残留数据
         [self.userTableView reloadData];
         
+        //设置当前页码为1
+        c.currentPage = 1;
+        
         //发送请求给服务器，加载右侧的数据
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         params[@"a"] = @"list";
         params[@"c"] = @"subscribe";
         params[@"category_id"] = @(c.id);
+        params[@"page"] = @(c.currentPage);
         [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             //字典数组 -> 模型数组
@@ -188,8 +197,15 @@ static NSString * const XMGUserId = @"user";
             //添加到当前类别对应的用户数组中
             [c.users addObjectsFromArray:users];
             
+            //保存总数
+            c.total = [responseObject[@"total"] integerValue];
+            
             //刷新右边的表格
             [self.userTableView reloadData];
+            
+            if (c.users.count == c.total) { //全部加载完毕
+                [self.userTableView.mj_footer endRefreshingWithNoMoreData];
+            }
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
