@@ -27,12 +27,25 @@
 /** 右边的用户表格 */
 @property (weak, nonatomic) IBOutlet UITableView *userTableView;
 
+/** 请求参数 */
+@property (nonatomic, strong) NSMutableDictionary *params;
+
+/** AFN请求管理者 */
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
+
 @end
 
 @implementation XMGRecommendViewController
 
 static NSString * const XMGCategoryId = @"category";
 static NSString * const XMGUserId = @"user";
+
+- (AFHTTPSessionManager *)manager {
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,6 +56,14 @@ static NSString * const XMGUserId = @"user";
     //添加刷新控件
     [self setupRefresh];
     
+    //加载左侧的类别数据
+    [self loadCategories];
+}
+
+/**
+ * 加载左侧的类别数据
+ */
+- (void)loadCategories {
     //显示指示器
     [SVProgressHUD show];
     
@@ -50,7 +71,7 @@ static NSString * const XMGUserId = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"category";
     params[@"c"] = @"subscribe";
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //隐藏指示器
         [SVProgressHUD dismiss];
@@ -115,10 +136,14 @@ static NSString * const XMGUserId = @"user";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @(rc.id);
     params[@"page"] = @(rc.currentPage);
+    self.params = params;
     
     //发送请求给服务器，加载右侧的数据
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    [self.manager  GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (self.params != params) return;
+        
         //字典数组 -> 模型数组
         NSArray *users = [XMGRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
@@ -142,6 +167,8 @@ static NSString * const XMGUserId = @"user";
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
+        if (self.params != params) return;
+        
         //提醒
         [SVProgressHUD showErrorWithStatus:@"加载用户数据失败"];
         
@@ -162,9 +189,13 @@ static NSString * const XMGUserId = @"user";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @(category.id);
     params[@"page"] = @(++category.currentPage);
+    self.params = params;
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (self.params != params) return;
+        
         //字典数组 -> 模型数组
         NSArray *users = [XMGRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
@@ -177,6 +208,8 @@ static NSString * const XMGUserId = @"user";
         //让底部控件结束刷新
         [self checkFooterState];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (self.params != params) return;
         
         //提醒
         [SVProgressHUD showErrorWithStatus:@"加载用户数据失败"];
@@ -210,6 +243,10 @@ static NSString * const XMGUserId = @"user";
 #pragma mark - <UITableViewDataSource>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    //结束刷新
+    [self.userTableView.mj_header endRefreshing];
+    [self.userTableView.mj_footer endRefreshing];
     
     //左边的类别表格
     if(tableView == self.categoryTableView) return self.categories.count;
@@ -257,5 +294,10 @@ static NSString * const XMGUserId = @"user";
     }
 }
 
+#pragma mark - 控制器的销毁
+- (void)dealloc {
+    //停止所有操作
+    [self.manager.operationQueue cancelAllOperations];
+}
 
 @end
