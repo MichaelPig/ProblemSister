@@ -7,6 +7,7 @@
 //
 
 #import "XMGEssenceViewController.h"
+#import "XMGRecommendTagsViewController.h"
 
 @interface XMGEssenceViewController ()
 
@@ -29,13 +30,12 @@
 }
 
 - (void)tagClick {
-    XMGLogFunc;
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    UIViewController *vc = [[UIViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    XMGRecommendTagsViewController *tags = [[XMGRecommendTagsViewController alloc] init];
+    
+    [self.navigationController pushViewController:tags animated:YES];
     
 }
+
 
 @end

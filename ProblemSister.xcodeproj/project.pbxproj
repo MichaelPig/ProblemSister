@@ -28,6 +28,10 @@
 		4C6D99961DA3F37F007D6F71 /* XMGRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D99941DA3F37F007D6F71 /* XMGRecommendViewController.m */; };
 		4C6D99971DA3F37F007D6F71 /* XMGRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D99951DA3F37F007D6F71 /* XMGRecommendViewController.xib */; };
 		4C6D99991DA3F882007D6F71 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D99981DA3F882007D6F71 /* Foundation+Log.m */; };
+		4C89CEB21DA7E25C00544FD7 /* XMGRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C89CEB11DA7E25B00544FD7 /* XMGRecommendTagsViewController.m */; };
+		4C89CEB51DA7EF2C00544FD7 /* XMGRecommendTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C89CEB41DA7EF2C00544FD7 /* XMGRecommendTags.m */; };
+		4C9A55551DA8CBFE00D3A60A /* XMGRecommendTagsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A55531DA8CBFE00D3A60A /* XMGRecommendTagsCell.m */; };
+		4C9A55561DA8CBFE00D3A60A /* XMGRecommendTagsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A55541DA8CBFE00D3A60A /* XMGRecommendTagsCell.xib */; };
 		4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDC62D11D9FF5A100198F3C /* Assets.xcassets */; };
 		963373585EF58DD9ADB7DFB6 /* libPods-ProblemSister.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B1E9F715E6D1F3E4D4A38A /* libPods-ProblemSister.a */; };
 /* End PBXBuildFile section */
@@ -71,6 +75,13 @@
 		4C6D99941DA3F37F007D6F71 /* XMGRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendViewController.m; sourceTree = "<group>"; };
 		4C6D99951DA3F37F007D6F71 /* XMGRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGRecommendViewController.xib; sourceTree = "<group>"; };
 		4C6D99981DA3F882007D6F71 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		4C89CEB01DA7E25B00544FD7 /* XMGRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendTagsViewController.h; sourceTree = "<group>"; };
+		4C89CEB11DA7E25B00544FD7 /* XMGRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendTagsViewController.m; sourceTree = "<group>"; };
+		4C89CEB31DA7EF2C00544FD7 /* XMGRecommendTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendTags.h; sourceTree = "<group>"; };
+		4C89CEB41DA7EF2C00544FD7 /* XMGRecommendTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendTags.m; sourceTree = "<group>"; };
+		4C9A55521DA8CBFE00D3A60A /* XMGRecommendTagsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendTagsCell.h; sourceTree = "<group>"; };
+		4C9A55531DA8CBFE00D3A60A /* XMGRecommendTagsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendTagsCell.m; sourceTree = "<group>"; };
+		4C9A55541DA8CBFE00D3A60A /* XMGRecommendTagsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGRecommendTagsCell.xib; sourceTree = "<group>"; };
 		4CDC62C21D9FF5A100198F3C /* ProblemSister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProblemSister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDC62D11D9FF5A100198F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDC62D61D9FF5A100198F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +137,8 @@
 			children = (
 				4C4FA6DE1DA28B3900ED0F85 /* XMGEssenceViewController.h */,
 				4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */,
+				4C89CEB01DA7E25B00544FD7 /* XMGRecommendTagsViewController.h */,
+				4C89CEB11DA7E25B00544FD7 /* XMGRecommendTagsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,6 +146,8 @@
 		4C4FA6E01DA28B3900ED0F85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C89CEB31DA7EF2C00544FD7 /* XMGRecommendTags.h */,
+				4C89CEB41DA7EF2C00544FD7 /* XMGRecommendTags.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +155,9 @@
 		4C4FA6E11DA28B3900ED0F85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C9A55521DA8CBFE00D3A60A /* XMGRecommendTagsCell.h */,
+				4C9A55531DA8CBFE00D3A60A /* XMGRecommendTagsCell.m */,
+				4C9A55541DA8CBFE00D3A60A /* XMGRecommendTagsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9A55561DA8CBFE00D3A60A /* XMGRecommendTagsCell.xib in Resources */,
 				4C1371001DA5318E00556B27 /* XMGRecommendUserCell.xib in Resources */,
 				4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */,
 				4C5ED8581DA4ADCB00F92774 /* XMGRecommendCategoryCell.xib in Resources */,
@@ -475,9 +494,11 @@
 			files = (
 				4C1371031DA5378900556B27 /* XMGRecommendUser.m in Sources */,
 				4C4FA70F1DA28B7800ED0F85 /* main.m in Sources */,
+				4C89CEB21DA7E25C00544FD7 /* XMGRecommendTagsViewController.m in Sources */,
 				4C5ED8531DA4A47400F92774 /* XMGRecommendCategory.m in Sources */,
 				4C6D99901DA38A47007D6F71 /* XMGNavigationController.m in Sources */,
 				4C4FA70D1DA28B3900ED0F85 /* XMGTabBar.m in Sources */,
+				4C9A55551DA8CBFE00D3A60A /* XMGRecommendTagsCell.m in Sources */,
 				4C4FA70C1DA28B3900ED0F85 /* XMGTabBarController.m in Sources */,
 				4C5ED8571DA4ADCB00F92774 /* XMGRecommendCategoryCell.m in Sources */,
 				4C1370FF1DA5318E00556B27 /* XMGRecommendUserCell.m in Sources */,
@@ -487,6 +508,7 @@
 				4C4FA7091DA28B3900ED0F85 /* AppDelegate.m in Sources */,
 				4C4FA70A1DA28B3900ED0F85 /* UIBarButtonItem+XMGExtension.m in Sources */,
 				4C4FA7071DA28B3900ED0F85 /* XMGMeViewController.m in Sources */,
+				4C89CEB51DA7EF2C00544FD7 /* XMGRecommendTags.m in Sources */,
 				4C6D99991DA3F882007D6F71 /* Foundation+Log.m in Sources */,
 				4C4FA70B1DA28B3900ED0F85 /* UIView+XMGExtension.m in Sources */,
 				4C4FA7051DA28B3900ED0F85 /* XMGFriendTrendsViewController.m in Sources */,
