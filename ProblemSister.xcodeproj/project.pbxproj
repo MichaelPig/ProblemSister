@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C03C7901DACE40300FE80B9 /* XMGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03C78E1DACE40300FE80B9 /* XMGLoginRegisterViewController.m */; };
+		4C03C7911DACE40300FE80B9 /* XMGLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C03C78F1DACE40300FE80B9 /* XMGLoginRegisterViewController.xib */; };
+		4C03C7941DAD259800FE80B9 /* XMGVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03C7931DAD259800FE80B9 /* XMGVerticalButton.m */; };
 		4C1370FF1DA5318E00556B27 /* XMGRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1370FD1DA5318E00556B27 /* XMGRecommendUserCell.m */; };
 		4C1371001DA5318E00556B27 /* XMGRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1370FE1DA5318E00556B27 /* XMGRecommendUserCell.xib */; };
 		4C1371031DA5378900556B27 /* XMGRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1371021DA5378900556B27 /* XMGRecommendUser.m */; };
@@ -38,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		1A930E0CB91491A5CFBD719A /* Pods-ProblemSister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProblemSister.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProblemSister/Pods-ProblemSister.debug.xcconfig"; sourceTree = "<group>"; };
+		4C03C78D1DACE40300FE80B9 /* XMGLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterViewController.h; sourceTree = "<group>"; };
+		4C03C78E1DACE40300FE80B9 /* XMGLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterViewController.m; sourceTree = "<group>"; };
+		4C03C78F1DACE40300FE80B9 /* XMGLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		4C03C7921DAD259800FE80B9 /* XMGVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVerticalButton.h; sourceTree = "<group>"; };
+		4C03C7931DAD259800FE80B9 /* XMGVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVerticalButton.m; sourceTree = "<group>"; };
 		4C1370FC1DA5318E00556B27 /* XMGRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendUserCell.h; sourceTree = "<group>"; };
 		4C1370FD1DA5318E00556B27 /* XMGRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendUserCell.m; sourceTree = "<group>"; };
 		4C1370FE1DA5318E00556B27 /* XMGRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGRecommendUserCell.xib; sourceTree = "<group>"; };
@@ -181,6 +189,9 @@
 				4C6D99931DA3F37F007D6F71 /* XMGRecommendViewController.h */,
 				4C6D99941DA3F37F007D6F71 /* XMGRecommendViewController.m */,
 				4C6D99951DA3F37F007D6F71 /* XMGRecommendViewController.xib */,
+				4C03C78D1DACE40300FE80B9 /* XMGLoginRegisterViewController.h */,
+				4C03C78E1DACE40300FE80B9 /* XMGLoginRegisterViewController.m */,
+				4C03C78F1DACE40300FE80B9 /* XMGLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +216,8 @@
 				4C1370FC1DA5318E00556B27 /* XMGRecommendUserCell.h */,
 				4C1370FD1DA5318E00556B27 /* XMGRecommendUserCell.m */,
 				4C1370FE1DA5318E00556B27 /* XMGRecommendUserCell.xib */,
+				4C03C7921DAD259800FE80B9 /* XMGVerticalButton.h */,
+				4C03C7931DAD259800FE80B9 /* XMGVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -432,6 +445,7 @@
 				4C1371001DA5318E00556B27 /* XMGRecommendUserCell.xib in Resources */,
 				4CDC62D21D9FF5A100198F3C /* Assets.xcassets in Resources */,
 				4C5ED8581DA4ADCB00F92774 /* XMGRecommendCategoryCell.xib in Resources */,
+				4C03C7911DACE40300FE80B9 /* XMGLoginRegisterViewController.xib in Resources */,
 				4C6D99971DA3F37F007D6F71 /* XMGRecommendViewController.xib in Resources */,
 				4C6D99921DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib in Resources */,
 			);
@@ -498,11 +512,13 @@
 				4C5ED8531DA4A47400F92774 /* XMGRecommendCategory.m in Sources */,
 				4C6D99901DA38A47007D6F71 /* XMGNavigationController.m in Sources */,
 				4C4FA70D1DA28B3900ED0F85 /* XMGTabBar.m in Sources */,
+				4C03C7901DACE40300FE80B9 /* XMGLoginRegisterViewController.m in Sources */,
 				4C9A55551DA8CBFE00D3A60A /* XMGRecommendTagsCell.m in Sources */,
 				4C4FA70C1DA28B3900ED0F85 /* XMGTabBarController.m in Sources */,
 				4C5ED8571DA4ADCB00F92774 /* XMGRecommendCategoryCell.m in Sources */,
 				4C1370FF1DA5318E00556B27 /* XMGRecommendUserCell.m in Sources */,
 				4C6D99961DA3F37F007D6F71 /* XMGRecommendViewController.m in Sources */,
+				4C03C7941DAD259800FE80B9 /* XMGVerticalButton.m in Sources */,
 				4C4FA7041DA28B3900ED0F85 /* XMGEssenceViewController.m in Sources */,
 				4C4FA7081DA28B3900ED0F85 /* XMGNewViewController.m in Sources */,
 				4C4FA7091DA28B3900ED0F85 /* AppDelegate.m in Sources */,
