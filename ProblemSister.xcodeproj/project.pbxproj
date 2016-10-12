@@ -13,6 +13,7 @@
 		4C1370FF1DA5318E00556B27 /* XMGRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1370FD1DA5318E00556B27 /* XMGRecommendUserCell.m */; };
 		4C1371001DA5318E00556B27 /* XMGRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1370FE1DA5318E00556B27 /* XMGRecommendUserCell.xib */; };
 		4C1371031DA5378900556B27 /* XMGRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1371021DA5378900556B27 /* XMGRecommendUser.m */; };
+		4C421C7F1DAE012C003B4F6A /* XMGTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C421C7E1DAE012C003B4F6A /* XMGTextField.m */; };
 		4C4FA7041DA28B3900ED0F85 /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */; };
 		4C4FA7051DA28B3900ED0F85 /* XMGFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6E51DA28B3900ED0F85 /* XMGFriendTrendsViewController.m */; };
 		4C4FA7071DA28B3900ED0F85 /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA6EC1DA28B3900ED0F85 /* XMGMeViewController.m */; };
@@ -51,6 +52,8 @@
 		4C1370FE1DA5318E00556B27 /* XMGRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGRecommendUserCell.xib; sourceTree = "<group>"; };
 		4C1371011DA5378900556B27 /* XMGRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendUser.h; sourceTree = "<group>"; };
 		4C1371021DA5378900556B27 /* XMGRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendUser.m; sourceTree = "<group>"; };
+		4C421C7D1DAE012C003B4F6A /* XMGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTextField.h; sourceTree = "<group>"; };
+		4C421C7E1DAE012C003B4F6A /* XMGTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTextField.m; sourceTree = "<group>"; };
 		4C4FA6DE1DA28B3900ED0F85 /* XMGEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
 		4C4FA6DF1DA28B3900ED0F85 /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
 		4C4FA6E41DA28B3900ED0F85 /* XMGFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				4C1370FE1DA5318E00556B27 /* XMGRecommendUserCell.xib */,
 				4C03C7921DAD259800FE80B9 /* XMGVerticalButton.h */,
 				4C03C7931DAD259800FE80B9 /* XMGVerticalButton.m */,
+				4C421C7D1DAE012C003B4F6A /* XMGTextField.h */,
+				4C421C7E1DAE012C003B4F6A /* XMGTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1371031DA5378900556B27 /* XMGRecommendUser.m in Sources */,
+				4C421C7F1DAE012C003B4F6A /* XMGTextField.m in Sources */,
 				4C4FA70F1DA28B7800ED0F85 /* main.m in Sources */,
 				4C89CEB21DA7E25C00544FD7 /* XMGRecommendTagsViewController.m in Sources */,
 				4C5ED8531DA4A47400F92774 /* XMGRecommendCategory.m in Sources */,
