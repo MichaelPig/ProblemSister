@@ -647,6 +647,7 @@
 				DEVELOPMENT_TEAM = 733VCMT28P;
 				GCC_PREFIX_HEADER = "ProblemSister/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = ProblemSister/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.ProblemSister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,6 +663,7 @@
 				DEVELOPMENT_TEAM = 733VCMT28P;
 				GCC_PREFIX_HEADER = "ProblemSister/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = ProblemSister/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Michael.ProblemSister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
