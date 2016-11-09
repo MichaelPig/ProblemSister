@@ -12,7 +12,10 @@
 @interface XMGEssenceViewController ()
 
 /** 标签栏底部的红色指示器 */
-@property (nonatomic, strong) UIView *indicatorView;
+@property (nonatomic, weak) UIView *indicatorView;
+
+/** 当前选中的按钮 */
+@property (nonatomic, weak) UIButton *selectedButton;
 
 @end
 
@@ -43,6 +46,14 @@
     titleView.alpha = 0.5;
     [self.view addSubview:titleView];
     
+    //底部的红色指示器
+    UIView *indicatorView = [[UIView alloc] init];
+    indicatorView.backgroundColor = [UIColor redColor];
+    indicatorView.height = 2;
+    indicatorView.y = titleView.height - indicatorView.height;
+    [titleView addSubview:indicatorView];
+    self.indicatorView = indicatorView;
+    
     //内部的子标签
     NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子"];
     CGFloat width = titleView.width / titles.count;
@@ -53,22 +64,33 @@
         button.width = width;
         button.x = width * i;
         [button setTitle:titles[i] forState:UIControlStateNormal];
+        [button layoutIfNeeded];//强制布局(强制更新子控件的frame)
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
         [button addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [titleView addSubview:button];
+        
+        //默认点击了第一个按钮
+        if (i == 0) {
+            button.enabled = NO;
+            self.selectedButton = button;
+            
+            self.indicatorView.width = button.titleLabel.width;
+            self.indicatorView.centerX = button.centerX;
+        }
     }
     
-    //底部的红色指示器
-    UIView *indicatorView = [[UIView alloc] init];
-    indicatorView.backgroundColor = [UIColor redColor];
-    indicatorView.height = 2;
-    indicatorView.y = titleView.height - indicatorView.height;
-    [titleView addSubview:indicatorView];
-    self.indicatorView = indicatorView;
 }
 
 - (void)titleClick:(UIButton *)button {
+    
+    //修改按钮状态
+    self.selectedButton.enabled = YES;
+    button.enabled = NO;
+    self.selectedButton = button;
+    
+    //动画
     [UIView animateWithDuration:0.25 animations:^{
         self.indicatorView.width = button.titleLabel.width;
         self.indicatorView.centerX = button.centerX;
