@@ -13,9 +13,10 @@
 
 /** 标签栏底部的红色指示器 */
 @property (nonatomic, weak) UIView *indicatorView;
-
 /** 当前选中的按钮 */
 @property (nonatomic, weak) UIButton *selectedButton;
+/** 顶部的所有标签 */
+@property (nonatomic, weak) UIView *titlesView;
 
 @end
 
@@ -30,6 +31,8 @@
     //设置顶部的标签栏
     [self setupTitleView];
     
+    //底部的scrollView
+    [self setupContentView];
 }
 
 /**
@@ -45,6 +48,7 @@
     titleView.y = 64;
     titleView.alpha = 0.5;
     [self.view addSubview:titleView];
+    self.titlesView = titleView;
     
     //底部的红色指示器
     UIView *indicatorView = [[UIView alloc] init];
@@ -98,6 +102,35 @@
     
 }
 
+/**
+ * 底部的scrollView
+ */
+- (void)setupContentView {
+    
+    //不要自动调节inset
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    UIScrollView *contentView = [[UIScrollView alloc] init];
+    contentView.backgroundColor = [UIColor blueColor];
+    contentView.frame = self.view.bounds;
+    //设置内边距
+    CGFloat bottom = self.tabBarController.tabBar.height;
+    CGFloat top = CGRectGetMaxY(self.titlesView.frame);
+    contentView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
+    [self.view insertSubview:contentView atIndex:0];
+    
+//    [contentView addSubview:[UIButton buttonWithType:UIButtonTypeContactAdd]];
+//
+//    UISwitch *s = [[UISwitch alloc] init];
+//    s.y = 740;
+//    [contentView addSubview:s];
+//    [self.view addSubview:contentView];
+//
+//    contentView.contentSize = CGSizeMake(0, 800);
+//    //    contentView.width = self.view.width;
+    //    contentView.y = 99;
+    //    contentView.height = self.view.height - contentView.y - self.tabBarController.tabBar.height;
+}
 
 /**
  * 设置导航栏
