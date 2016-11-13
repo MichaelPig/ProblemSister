@@ -7,8 +7,13 @@
 //
 
 #import "XMGWordViewController.h"
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
 
 @interface XMGWordViewController ()
+
+/** 帖子数据 */
+@property (nonatomic, strong) NSArray *topics;
 
 @end
 
@@ -17,11 +22,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    params[@"type"] = @"29";
+    //发送请求
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        self.topics = responseObject[@"list"];
+        
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +47,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 50;
+    return self.topics.count;
 }
 
 
@@ -45,10 +59,12 @@
     
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        cell.backgroundColor = [UIColor blueColor];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@----%zd",[self class], indexPath.row];
+    NSDictionary *topic = self.topics[indexPath.row];
+    cell.textLabel.text = topic[@"name"];
+    cell.detailTextLabel.text = topic[@"text"];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topic[@"profile_image"]] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
     return cell;
 }
