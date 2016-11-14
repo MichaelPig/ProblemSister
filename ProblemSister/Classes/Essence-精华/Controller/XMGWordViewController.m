@@ -21,7 +21,8 @@
 @property (nonatomic, assign) NSInteger page;
 /** 当加载下一页数据时需要这个参数 */
 @property (nonatomic, copy) NSString *maxtime;
-
+/** 上一次的请求参数 */
+@property (nonatomic, strong) NSDictionary *params;
 
 @end
 
@@ -57,17 +58,23 @@
  */
 - (void)loadNewTopics {
     
-    //页码
-    self.page = 0;
+    //结束刷新
+    [self.tableView.mj_header endRefreshing];
     
     //参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
     params[@"type"] = @"29";
+    self.params = params;
+    
     //发送请求
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (self.params != params) {
+            return;
+        }
         
         //存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
@@ -80,7 +87,13 @@
         
         //结束刷新
         [self.tableView.mj_header endRefreshing];
+        
+        //页码
+        self.page = 0;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (self.params != params) {
+            return;
+        }
         //结束刷新
         [self.tableView.mj_header endRefreshing];
     }];
@@ -91,6 +104,9 @@
  */
 - (void)loadMoreTopics {
     
+    //结束刷新
+    [self.tableView.mj_footer endRefreshing];
+    
     self.page++;
     
     //参数
@@ -100,9 +116,15 @@
     params[@"type"] = @"29";
     params[@"page"] = @(self.page);
     params[@"maxtime"] = self.maxtime;
+    self.params = params;
+    
     //发送请求
     [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (self.params != params) {
+            return;
+        }
         
         //存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
@@ -117,8 +139,13 @@
         //结束刷新
         [self.tableView.mj_footer endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (self.params != params) {
+            return;
+        }
         //结束刷新
         [self.tableView.mj_footer endRefreshing];
+        //恢复页码
+        self.page--;
     }];
 }
 
