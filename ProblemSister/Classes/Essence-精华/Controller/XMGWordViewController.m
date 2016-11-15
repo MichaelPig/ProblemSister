@@ -38,18 +38,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //初始化表格
+    [self setupTableView];
+    
     //添加刷新控件
     [self setupRefresh];
 }
 
+- (void)setupTableView {
+    //设置内边距
+    CGFloat bottom = self.tabBarController.tabBar.height;
+    CGFloat top = XMGTitlesVIewY + XMGTitlesViewH;
+    self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
+    //设置滚动条内边距
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+}
+
 - (void)setupRefresh {
+    
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     //自动改变透明度
     self.tableView.mj_header.automaticallyChangeAlpha = YES;
     [self.tableView.mj_header beginRefreshing];
     
-    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
-
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
 }
 
 #pragma mark - 数据处理
@@ -152,7 +165,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    self.tableView.mj_footer.hidden = (self.topics.count == 0);
     return self.topics.count;
 }
 

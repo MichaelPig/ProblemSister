@@ -11,6 +11,7 @@
 
 #import "UIView+XMGExtension.h"
 #import "UIBarButtonItem+XMGExtension.h"
+#import "XMGConst.h"
 
 #ifdef DEBUG
 
