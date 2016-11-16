@@ -12,6 +12,7 @@
 #import "XMGTopic.h"
 #import <MJExtension.h>
 #import <MJRefresh.h>
+#import "XMGTopicCell.h"
 
 @interface XMGWordViewController ()
 
@@ -45,6 +46,8 @@
     [self setupRefresh];
 }
 
+static NSString * const XMGTopicCellId = @"topic";
+
 - (void)setupTableView {
     //设置内边距
     CGFloat bottom = self.tabBarController.tabBar.height;
@@ -52,6 +55,12 @@
     self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
     //设置滚动条内边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    
+    //注册
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XMGTopicCell class]) bundle:nil] forCellReuseIdentifier:XMGTopicCellId];
 }
 
 - (void)setupRefresh {
@@ -172,20 +181,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *ID = @"cell";
+    XMGTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:XMGTopicCellId];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
-    if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    
-    XMGTopic *topic = self.topics[indexPath.row];
-    cell.textLabel.text = topic.name;
-    cell.detailTextLabel.text = topic.text;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    cell.topic = self.topics[indexPath.row];
+
     
     return cell;
+}
+
+#pragma mark - 代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return  200;
+    
 }
 
 - (void)didReceiveMemoryWarning {

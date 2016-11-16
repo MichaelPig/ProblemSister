@@ -32,6 +32,8 @@
 		4C4FA70D1DA28B3900ED0F85 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA7031DA28B3900ED0F85 /* XMGTabBar.m */; };
 		4C4FA70F1DA28B7800ED0F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FA70E1DA28B7800ED0F85 /* main.m */; };
 		4C4FC5391DDB2930005C2249 /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FC5381DDB2930005C2249 /* XMGConst.m */; };
+		4C4FC53D1DDC8CF7005C2249 /* XMGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FC53B1DDC8CF7005C2249 /* XMGTopicCell.m */; };
+		4C4FC53E1DDC8CF7005C2249 /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4FC53C1DDC8CF7005C2249 /* XMGTopicCell.xib */; };
 		4C5B5ED21DD817D10014EB5A /* XMGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B5ED11DD817D10014EB5A /* XMGTopic.m */; };
 		4C5ED8531DA4A47400F92774 /* XMGRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED8521DA4A47400F92774 /* XMGRecommendCategory.m */; };
 		4C5ED8571DA4ADCB00F92774 /* XMGRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED8551DA4ADCB00F92774 /* XMGRecommendCategoryCell.m */; };
@@ -98,6 +100,9 @@
 		4C4FA70E1DA28B7800ED0F85 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C4FC5371DDB2930005C2249 /* XMGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGConst.h; sourceTree = "<group>"; };
 		4C4FC5381DDB2930005C2249 /* XMGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGConst.m; sourceTree = "<group>"; };
+		4C4FC53A1DDC8CF7005C2249 /* XMGTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicCell.h; sourceTree = "<group>"; };
+		4C4FC53B1DDC8CF7005C2249 /* XMGTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicCell.m; sourceTree = "<group>"; };
+		4C4FC53C1DDC8CF7005C2249 /* XMGTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicCell.xib; sourceTree = "<group>"; };
 		4C5B5ED01DD817D10014EB5A /* XMGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopic.h; sourceTree = "<group>"; };
 		4C5B5ED11DD817D10014EB5A /* XMGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopic.m; sourceTree = "<group>"; };
 		4C5ED8511DA4A47400F92774 /* XMGRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRecommendCategory.h; sourceTree = "<group>"; };
@@ -207,6 +212,9 @@
 				4C9A55521DA8CBFE00D3A60A /* XMGRecommendTagsCell.h */,
 				4C9A55531DA8CBFE00D3A60A /* XMGRecommendTagsCell.m */,
 				4C9A55541DA8CBFE00D3A60A /* XMGRecommendTagsCell.xib */,
+				4C4FC53A1DDC8CF7005C2249 /* XMGTopicCell.h */,
+				4C4FC53B1DDC8CF7005C2249 /* XMGTopicCell.m */,
+				4C4FC53C1DDC8CF7005C2249 /* XMGTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -497,6 +505,7 @@
 				4C03C7911DACE40300FE80B9 /* XMGLoginRegisterViewController.xib in Resources */,
 				4C6D99971DA3F37F007D6F71 /* XMGRecommendViewController.xib in Resources */,
 				4C6D99921DA3DFF0007D6F71 /* XMGFriendTrendsViewController.xib in Resources */,
+				4C4FC53E1DDC8CF7005C2249 /* XMGTopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +584,7 @@
 				4C6D99961DA3F37F007D6F71 /* XMGRecommendViewController.m in Sources */,
 				4C03C7941DAD259800FE80B9 /* XMGVerticalButton.m in Sources */,
 				4C4FA7041DA28B3900ED0F85 /* XMGEssenceViewController.m in Sources */,
+				4C4FC53D1DDC8CF7005C2249 /* XMGTopicCell.m in Sources */,
 				4C09C2401DD705AD0071D881 /* XMGVideoViewController.m in Sources */,
 				4C09C2491DD7061D0071D881 /* XMGWordViewController.m in Sources */,
 				4C4FA7081DA28B3900ED0F85 /* XMGNewViewController.m in Sources */,
